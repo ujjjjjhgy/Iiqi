@@ -1,0 +1,39 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+  background: black;
+}
+
+.stars {
+  position: fixed;
+  width: 200%;
+  height: 200%;
+  background: url('https://upload.wikimedia.org/wikipedia/commons/8/84/Stars.gif') repeat;
+  background-size: cover;
+  animation: moveBg 60s linear infinite;
+  z-index: 0;
+}
+
+@keyframes moveBg {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(-50%, -50%); }
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  top: 25%;
+}
+
+.pfp {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid white;
+  margin-bottom: 20px;
+}
